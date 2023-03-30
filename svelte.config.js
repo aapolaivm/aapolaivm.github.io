@@ -1,24 +1,22 @@
-//import adapter from '@sveltejs/adapter-auto';
-//import { vitePreprocess } from '@sveltejs/kit/vite';
-//import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-static';
 
-const dev = process.argv.includes('dev');
+import preprocess from 'svelte-preprocess';
+import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
-		adapter: adapter({
-			fallback: 'index.html'
-		}),
-		paths: {
-			base: dev ? '' : '',
-		},
-		prerender: {
+ // Consult https://github.com/sveltejs/svelte-preprocess
+ // for more information about preprocessors
+ preprocess: preprocess(),
 
-			handleMissingId: "warn",
-		}
-	}
+ kit: {
+ // hydrate the <div id="svelte"> element in src/app.html
+  target: '#svelte',
+  adapter: adapter({
+    pages: 'build',
+    assets: 'build',
+    fallback: null
+  })
+ }
 };
 
 export default config;
