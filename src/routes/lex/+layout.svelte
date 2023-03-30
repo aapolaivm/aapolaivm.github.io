@@ -108,3 +108,5 @@
         background-color: 'white' !important;
     }
 </style>
+
+<slot />
