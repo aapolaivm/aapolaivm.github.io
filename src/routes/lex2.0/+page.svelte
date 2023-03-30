@@ -1,10 +1,13 @@
 <script>
-    import Mermaid from 'Mermaid.svelte';
+    //import mermaid from 'mermaid.svelte';
 </script>
 
 <h1>Supp</h1>
+<!--
 
-<Mermaid>
+<mermaid>
     flowchart LR 
-        1 --> 2
-</Mermaid>
+        1 -> 2
+</mermaid>
+
+-->
