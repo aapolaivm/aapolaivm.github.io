@@ -1,5 +1,6 @@
 <script>
     import '../app.css'
+    export const prerender = true;
 </script>
 
 <nav>
@@ -11,3 +12,5 @@
 </nav>
 
 <slot />
+
+
