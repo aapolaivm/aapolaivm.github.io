@@ -6,20 +6,19 @@ const dev = process.argv.includes('dev');
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
- // Consult https://github.com/sveltejs/svelte-preprocess
- // for more information about preprocessors
- preprocess: preprocess(),
+	kit: {
+		adapter: adapter({
+			fallback: 'index.html'
+		}),
+		paths: {
+			base: dev ? '' : '',
+		},
+		prerender: {
 
- kit: {
-  adapter: adapter({
-	paths: {
-		base: dev ? '' : '/aapolaivm.github.io/src/app.html'
-	},
-    pages: 'build',
-    assets: 'build',
-    fallback: null
-  })
- }
+			handleMissingId: "warn",
+		}
+	}
 };
+
 
 export default config;
