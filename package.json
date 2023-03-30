@@ -27,6 +27,7 @@
 		"jsplumb": "^2.15.6",
 		"mermaid": "^10.0.2",
 		"svelte-video-player": "^1.2.5",
-		"svelvet": "^6.0.12"
+		"svelvet": "^6.0.12",
+		"gh-pages": "^5.0.0"
 	}
 }
