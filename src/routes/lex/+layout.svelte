@@ -92,10 +92,10 @@
 <Svelvet 
     nodes={initialNodes} 
     edges={initialEdges} 
-    width={1000} 
+    width={900} 
     height={800} 
     background={false}
-    bgColor={'white'}
+    bgColor={'#EAE7DC'}
     locked={true}
     collapsible={true}
     movement={false}
