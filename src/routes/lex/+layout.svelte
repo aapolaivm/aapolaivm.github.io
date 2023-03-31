@@ -1,78 +1,80 @@
 <script>
     import Svelvet from "svelvet";
 
+    //Korvaavia GoJS?
+
     const initialNodes = [
       {
         id: 0,
-        position: { x: 50, y: 50 },
+        position: { x: 25, y: 50 },
         data: { label: "Säännökset" },
-        width: 150,
+        width: 100,
         height: 40,
         bgColor: "white"
       },
       {
         id: 1,
-        position: { x: 250, y: 50 },
+        position: { x: 175, y: 50 },
         data: { label: "Säännös 1" },
-        width: 150,
+        width: 100,
         height: 40,
         bgColor: "white"
       },
       {
         id: 2,
-        position: { x: 250, y: 150 },
+        position: { x: 175, y: 150 },
         data: { label: "Säännös 2" },
-        width: 150,
+        width: 100,
         height: 40,
         bgColor: "white"
       },
       {
         id: 11,
-        position: { x: 450, y: 50 },
+        position: { x: 325, y: 50 },
         data: { label: "Säännös 1.1" },
-        width: 150,
+        width: 100,
         height: 40,
         bgColor: "white"
       },
       {
         id: 21,
-        position: { x: 450, y: 150 },
+        position: { x: 325, y: 150 },
         data: { label: "Säännös 2.1" },
-        width: 150,
+        width: 100,
         height: 40,
         bgColor: "white"
       },
       {
         id: 22,
-        position: { x: 450, y: 200 },
+        position: { x: 325, y: 200 },
         data: { label: "Säännös 2.2" },
-        width: 150,
+        width: 100,
         height: 40,
         bgColor: "white"
       },
       {
         id: 23,
-        position: { x: 450, y: 250 },
+        position: { x: 325, y: 250 },
         data: { label: "Säännös 2.3" },
-        width: 150,
+        width: 100,
         height: 40,
         bgColor: "white",
         
       },
       {
         id: 221,
-        position: { x: 650, y: 200 },
-        data: { label: "Säännös 2.2.1" },
+        position: { x: 475, y: 215 },
+        data: { label: "Säännös 2.2.1: Säännös kertoo seuraavaa..." },
         width: 150,
-        height: 40,
+        height: 50,
         bgColor: "white",
       },
       {
         id: 211,
-        position: { x: 650, y: 150 },
-        data: { label: "Säännös 2.1.1" },
+        position: { x: 475, y: 150 },
+        data: { label: "Säännös 2.1.1: Säännös kertoo seuraavaa..." },
         width: 150,
-        height: 40,
+        height: 50,
         bgColor: "white",
       }
     ];
@@ -92,7 +94,7 @@
 <Svelvet 
     nodes={initialNodes} 
     edges={initialEdges} 
-    width={900} 
+    width={800} 
     height={800} 
     background={false}
     bgColor={'#EAE7DC'}
