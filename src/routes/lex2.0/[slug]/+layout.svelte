@@ -1,6 +1,5 @@
 <script>
-	import TreeView from './TreeView.svelte'
-
+    import TreeView from '../TreeView.svelte';
 	const tree = {
 		label: "Verolait",children: [
 			{label: "Laki elinkeinotulon verottamisesta (1968/360)", children: [
@@ -56,7 +55,7 @@
         <TreeView {tree} />
     </aside>
     <main>
-        <h2>Säännöksien merkityssisällöt</h2>
+        <slot />
     </main>
 </div>
 

@@ -1,13 +1,13 @@
 <script context="module">
 	// retain module scoped expansion state for each tree node
 	const _expansionState = {
-		/* treeNodeId: expanded <boolean> */
+	//	 treeNodeId: expanded <boolean>
 	}
 </script>
 <script>
-//	import { slide } from 'svelte/transition'
+	// import { slide } from 'svelte/transition'
 	export let tree
-	const {label, children} = tree
+	const {label, children, slug} = tree
 
 	let expanded = _expansionState[label] || false
 	const toggleExpansion = () => {
@@ -31,7 +31,7 @@
 		{:else}
 			<span>
 				<span class="no-arrow"/>
-				{label}
+				<a href="/lex2.0/{slug}">{label}</a>
 			</span>
 		{/if}
 	</li>
