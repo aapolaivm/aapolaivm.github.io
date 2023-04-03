@@ -7,9 +7,9 @@
       {
         id: 0,
         position: { x: 25, y: 50 },
-        data: { label: "Säännökset" },
+        data: { label: "Elinkeino- verolaki" },
         width: 100,
-        height: 40,
+        height: 60,
         bgColor: "white"
       },
       {
