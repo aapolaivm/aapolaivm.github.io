@@ -4,24 +4,19 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="../favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		
-
-		<script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
-		<script src="/path/to/cdn/jsPlumb.min.js"></script>
-		<script src="./jsplumb-tree.js"></script>
 
 		<meta http-equiv="content-security-policy" content="">
 		<link href="../_app/immutable/assets/_layout.63cac167.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.5cc666b6.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.d23d63bc.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.f3265890.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.457ea0da.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/paths.5b712c77.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.0dbb1c72.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.898235b2.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.fe787874.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.21fe5810.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.3e682ab3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.cbaec432.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.2ab9be1f.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.04b0b0f9.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.cc9a568e.js">
 		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.822e9be0.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.79cb23d1.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/info-page.svelte.628c7c81.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/info-page.svelte.64582d69.js">
 
 	</head>
 	<body data-sveltekit-preload-data="hover">
@@ -29,7 +24,8 @@
 
 
 <nav><a prefetch href="/">Etusivu</a>
-    <a prefetch href="/lex">Säännöskirjasto</a>
+    <a prefetch href="/lex">Visuaalinen Säännöskirjasto</a>
+    <a prefetch href="/lexmain">Säännöskirjasto</a>
     
     <a prefetch href="/info">Tietoja meistä</a>
     <a prefetch href="/blog">Blog</a></nav>
@@ -41,7 +37,7 @@
 			
 			<script>
 				{
-					__sveltekit_5lh249 = {
+					__sveltekit_1y0f1ei = {
 						env: {},
 						base: new URL("..", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
@@ -50,11 +46,11 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.5cc666b6.js"),
-						import("../_app/immutable/entry/app.0dbb1c72.js")
+						import("../_app/immutable/entry/start.fe787874.js"),
+						import("../_app/immutable/entry/app.04b0b0f9.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_5lh249.element, {
-							node_ids: [0, 8],
+						kit.start(app, __sveltekit_1y0f1ei.element, {
+							node_ids: [0, 10],
 							data,
 							form: null,
 							error: null
