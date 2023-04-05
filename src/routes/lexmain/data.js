@@ -1,7 +1,7 @@
 export const posts = [
 	
     {
-        id: 'undefined',
+        id: 'tyhja',
         title: 'Tyhjä',
         content: 'Tämä ei ole vielä valmis'
     },

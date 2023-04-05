@@ -32,7 +32,11 @@
 		{:else}
 			<span>
 				<span class="no-arrow"/>
+				{#if id}
 				<a href="/lexmain/{id}">{label}</a>
+				{:else}
+				<a href="/lexmain/tyhja">{label}</a>
+				{/if}
 			</span>
 		{/if}
 	</li>
