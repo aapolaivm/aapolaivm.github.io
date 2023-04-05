@@ -7,7 +7,7 @@
 <script>
 	// import { slide } from 'svelte/transition'
 	export let tree
-	const {label, children, slug} = tree
+	const {label, children, id} = tree
 
 	let expanded = _expansionState[label] || false
 	const toggleExpansion = () => {
@@ -19,6 +19,7 @@
 <ul><!-- transition:slide -->
 	<li>
 		{#if children}
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<span on:click={toggleExpansion}>
 				<span class="arrow" class:arrowDown>&#x25b6</span>
 				{label}
@@ -31,7 +32,7 @@
 		{:else}
 			<span>
 				<span class="no-arrow"/>
-				<a href="/lex2.0/{slug}">{label}</a>
+				<a href="/lexmain/{id}">{label}</a>
 			</span>
 		{/if}
 	</li>

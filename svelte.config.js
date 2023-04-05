@@ -14,7 +14,7 @@ const config = {
 			base: dev ? '' : '',
 		},
 		prerender: {
-
+			entries: ['/lexmain/52hTouko', '/lexmain/52hJape', '/lexmain/52hTero', '/lexmain/52hAapo' ],
 			handleMissingId: "warn",
 		}
 	}
