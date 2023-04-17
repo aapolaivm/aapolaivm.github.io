@@ -1,3 +1,3 @@
 # aapolaivm.github.io
 
-Kyse on sveltellä tehdystä projekstissa jossa oikeustieteellistä tekstiä olisi sivulla tarjolla
+Kyse on sveltellä tehdystä projektista, jossa olisi tarjolla oikeustieteellistä tekstiä kevyessä muodossa.
